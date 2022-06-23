@@ -10,7 +10,19 @@ purple/red: 900C3F;
 purple: 511845;
 */
 body {
-  background-color: rgb(195, 89, 18);
+  background-color: #FF5733;
+}
+
+button {
+  background-color: #C70039; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
 }
 
 nav {
@@ -29,8 +41,8 @@ nav {
   align-items: center;
   margin: auto;
   width: 60vw;
-  background-color: white;
-  border-radius: 25px;
+  background-color: white ;
+  border-radius: 10px;
 }
 
 .result-app {
@@ -38,18 +50,22 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 textarea {
   display: flex;
   justify-content: center;
-  width: 50vw;
+  align-items: center;
+  width: 60vw;
   height: 60vh;
-  border: 1px solid rgb(85, 24, 228);
-  border-radius: 25px;
+  border: 0px solid  #900C3F;
   outline: none;
+  resize: none;
+  border-radius: 10px;
 }
 
 .translate {
-  display: block;
+  text-align: center;
+  margin-top: 10px;
 }
