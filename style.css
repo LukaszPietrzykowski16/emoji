@@ -9,12 +9,8 @@ red: C70039;
 purple/red: 900C3F;
 purple: 511845;
 */
-body {
-  background-color: #FF5733;
-}
 
 button {
-  background-color: #C70039; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -30,8 +26,10 @@ nav {
   justify-content: center;
   align-items: center;
   margin-bottom: 10vh;
-  background-color: white;
   font-size: 60px;
+  color: white;
+  font-weight: bold;
+  border-bottom: 1px solid white;
 }
 
 .app {
