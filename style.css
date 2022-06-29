@@ -2,6 +2,7 @@
   padding: 0;
   box-sizing: border-box;
   margin: 0;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 /*
 orange: FF5733;
@@ -20,6 +21,7 @@ button {
   font-size: 16px;
   border-radius: 10px;
 }
+
 
 nav {
   display: flex;
@@ -66,17 +68,18 @@ textarea {
 .translate {
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .hero_area {
   position: relative;
-  height: 35vh;
+  height: 38vh;
 }
 
 .waves {
   position: absolute;
   width: 100%;
-  height: 25vh;
+  height: 35vh;
   min-height: 100px;
   max-height: 150px;
   bottom: 0;
@@ -111,25 +114,47 @@ textarea {
 
 .bubbles {
   position: absolute;
-  width: 100%;
-  height: 2600px;
-  min-height: 100px;
-  max-height: 150px;
   top: 0;
-  left: 0;
-
-}
-
-.bubbles-svg {
-  height: 100%;
   width: 100%;
-  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
 }
 
-circle {
-  animation: goinUp 25s cubic-bezier(.5, .5, .45, .5) infinite;
-  animation-delay: 0.5s;
-  animation-duration: 1s;
+.bubbles span {
+  position: absolute;
+  bottom: -50px;
+  background: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: animate 4s linear infinite;
+  background-color: black;
+}
+
+.bubbles span::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  99% 
+  {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1200%);
+    opacity: 0;
+  }
 }
 
 @keyframes waving {
