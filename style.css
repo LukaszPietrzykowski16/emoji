@@ -53,6 +53,10 @@ nav {
   text-align: center;
 }
 
+.result {
+  padding: 20px;
+}
+
 textarea {
   display: flex;
   justify-content: center;
