@@ -180,8 +180,16 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .navigation {
+    font-size: 2em;
+  }
+
   .waves {
     height: 200px;
     min-height: 200px;
+  }
+
+  .app {
+    width: 90vw;
   }
 }
