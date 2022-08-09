@@ -1,3 +1,4 @@
+<img src="./baner.PNG"/>
 # EmojiText
 
 Check out live preview: 
