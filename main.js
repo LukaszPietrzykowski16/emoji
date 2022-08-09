@@ -12,9 +12,9 @@ const translate = document.querySelector('.translate').addEventListener('click',
 
 })
 function replaceWhiteSpace() {
-  min = Math.ceil(1);
-  max = Math.floor(3);
-  max2 = Math.floor(9);
+  let min = Math.ceil(1);
+  let max = Math.floor(3);
+  let max2 = Math.floor(9);
 
   return `&#128${Math.floor(Math.random() * (max - min + 1)) + min}${Math.floor(Math.random() * (max2 - min + 1)) + min}${Math.floor(Math.random() * (max2 - min + 1)) + min}`;
 }
