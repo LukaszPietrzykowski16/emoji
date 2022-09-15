@@ -1,9 +1,10 @@
 const translate = document.querySelector('.translate').addEventListener('click', changeText)
 function changeText(){
+  // getting value text
   let areaOfText = document.querySelector('.area-of-text').value;
   let index = 0;
   const whiteSpaceArray = [];
-
+  // checking white spaces
   while ((index = areaOfText.indexOf(' ', index+1)) > 0){
     whiteSpaceArray.push(index);
   }
@@ -12,6 +13,7 @@ function changeText(){
 }
 
 function replaceWhiteSpace() {
+  // replcacing white spaces with random emojis
   let min = Math.ceil(1);
   let max = Math.floor(3);
   let max2 = Math.floor(9);
@@ -20,6 +22,7 @@ function replaceWhiteSpace() {
 }
 
 function replaceAt(s, ilosc, c) {
+  // getting new array with emojis
   const arr = [...s]; 
   for (let i=0; i<arr.length; i++) {
     arr[ilosc[i]] = replaceWhiteSpace();    
