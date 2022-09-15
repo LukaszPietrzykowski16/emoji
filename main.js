@@ -33,4 +33,11 @@ function changeSigns(areaOfText, whiteSpaceArray){
   replaceAt(areaOfText, whiteSpaceArray, '!')
 }
 
+// adding this just to give hint user what to do
+const displayingTextAfterTwoSeconds = setInterval(() => {
+  document.querySelector('.translate').click()
+  clearInterval(displayingTextAfterTwoSeconds)
+}, 2000)
+
+
 
