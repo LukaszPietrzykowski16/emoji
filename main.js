@@ -1,6 +1,6 @@
-const translate = document.querySelector('.translate').addEventListener('click', () => {
+const translate = document.querySelector('.translate').addEventListener('click', changeText)
+function changeText(){
   let areaOfText = document.querySelector('.area-of-text').value;
-  // areaOfText.indexOf(' ')
   let index = 0;
   const whiteSpaceArray = [];
 
@@ -9,8 +9,8 @@ const translate = document.querySelector('.translate').addEventListener('click',
   }
 
   changeSigns(areaOfText, whiteSpaceArray)
+}
 
-})
 function replaceWhiteSpace() {
   let min = Math.ceil(1);
   let max = Math.floor(3);
@@ -40,4 +40,11 @@ const displayingTextAfterTwoSeconds = setInterval(() => {
 }, 2000)
 
 
-
+// adding enter click
+document.addEventListener("keyup", (e) => {
+  if (e.key === 'Enter') {
+    changeText() 
+  } else {
+    return;
+  }
+});
